@@ -1,0 +1,1 @@
+alias php='/d/programming/laragon/laragon/bin/php/php-8.0.10-Win32-vs16-x64/php'
