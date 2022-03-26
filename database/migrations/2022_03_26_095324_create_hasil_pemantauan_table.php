@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('hasil_pemantauan', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_data');
             $table->unsignedBigInteger('titik_pemantauan');
             $table->foreign('titik_pemantauan')->references('id_titik')->on('titik_pemantauan');
             $table->date('tanggal_pemantauan');

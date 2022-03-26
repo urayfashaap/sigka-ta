@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('pages.app.beranda');
-// });
+Route::get('/', function () {
+    return view('pages.app.beranda');
+});
 
 route::prefix('beranda')
     ->namespace('Beranda')

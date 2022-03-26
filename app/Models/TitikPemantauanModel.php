@@ -20,6 +20,7 @@ class TitikPemantauanModel extends Model
         'longitude',
         'nama_sungai',
         'kecamatan',
+        'mutu_air',
     ];
 
     protected $hidden = [];

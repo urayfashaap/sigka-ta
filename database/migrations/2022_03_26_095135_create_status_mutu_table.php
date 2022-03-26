@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('titik_pemantauan', function (Blueprint $table) {
-            $table->bigIncrements('id_titik');
-            $table->string('nama');
-            $table->decimal('latitude', $precision = 8, $scale = 6);
-            $table->decimal('longitude', $precision = 9, $scale = 6);
-            $table->string('nama_sungai');
-            $table->string('kecamatan')
-                ->default(' ');
+        Schema::create('status_mutu', function (Blueprint $table) {
+            $table->bigIncrements('id_mutu');
+            $table->string('nama_status');
+            $table->string('kelas_status');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -33,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('titik_pemantauan');
+        Schema::dropIfExists('status_mutu');
     }
 };

@@ -24,6 +24,7 @@
                                 <th>Longitude</th>
                                 <th>Nama Sungai</th>
                                 <th>Kecamatan</th>
+                                <th>Status Mutu</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -34,13 +35,15 @@
                                     <td>{{ $item->nama }}</td>
                                     <td>{{ $item->latitude }}</td>
                                     <td>{{ $item->longitude }}</td>
-                                    <td>{{ $item->nama_sungai }}</tt>
-                                    <td>{{ $item->kecamatan }}</tt>
+                                    <td>{{ $item->nama_sungai }}</td>
+                                    <td>{{ $item->kecamatan }}</td>
+                                    <td>{{ $item->nama_status }}</td>
                                     <td>
-                                        {{-- <a href="{{ route('kelola-titik.show', $item->id) }}" class="btn btn-info">
-                                            <i class="fa fa-book-alt"></i>
-                                        </a> --}}
-                                        <a href="{{ route('kelola-titik.edit', $item->id_titik) }}" class="btn btn-info">
+                                        <a href="{{ route('kelola-titik.show', $item->id_titik) }}" class="btn btn-info">
+                                            <i class="fa fa-data-alt"></i>
+                                        </a>
+                                        <a href="{{ route('kelola-titik.edit', $item->id_titik) }}"
+                                            class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
                                         <form action="{{ route('kelola-titik.destroy', $item->id_titik) }}" method="POST"
