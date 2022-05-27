@@ -18,22 +18,22 @@ class StatusMutu extends Seeder
         DB::table('status_mutu')->insert(
             [
                 [
-                    'id_mutu' => 1,
+                    'id' => 1,
                     'nama_status' => 'Memenuhi Baku Mutu',
                     'kelas_status' => 'A',
                 ],
                 [
-                    'id_mutu' => 2,
+                    'id' => 2,
                     'nama_status' => 'Tercemar Ringan',
                     'kelas_status' => 'B',
                 ],
                 [
-                    'id_mutu' => 3,
+                    'id' => 3,
                     'nama_status' => 'Tercemar Sedang',
                     'kelas_status' => 'C',
                 ],
                 [
-                    'id_mutu' => 4,
+                    'id' => 4,
                     'nama_status' => 'Tercemar Berat',
                     'kelas_status' => 'D',
                 ],

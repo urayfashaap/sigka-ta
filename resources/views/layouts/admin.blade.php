@@ -9,9 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <title>SB Admin 2 - Dashboard</title>
 
     @include('includes.backend.style')
+    @yield('includes.backend.styles')
 </head>
 
 <body id="page-top">
@@ -71,6 +73,7 @@
     </div>
 
     @include('includes.backend.script')
+
 </body>
 
 </html>

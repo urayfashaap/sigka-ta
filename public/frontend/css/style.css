@@ -26,6 +26,15 @@
     width: 100vw;
 }
 
+#navbar{
+    background: linear-gradient(rgba(0,0,0,0.5),var(--clr-tersier));
+    background-image: var(--hero-img);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 .logo{
     width: 5rem;
     position: absolute;

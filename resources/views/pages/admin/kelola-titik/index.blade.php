@@ -15,7 +15,7 @@
         <div class="row">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" cellspacing="0">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>ID Titik</th>
@@ -31,7 +31,7 @@
                         <tbody>
                             @forelse ($items as $item)
                                 <tr>
-                                    <td>{{ $item->id_titik }}</td>
+                                    <td>{{ $item->id }}</td>
                                     <td>{{ $item->nama }}</td>
                                     <td>{{ $item->latitude }}</td>
                                     <td>{{ $item->longitude }}</td>
@@ -39,21 +39,47 @@
                                     <td>{{ $item->kecamatan }}</td>
                                     <td>{{ $item->nama_status }}</td>
                                     <td>
-                                        <a href="{{ route('kelola-titik.show', $item->id_titik) }}" class="btn btn-info">
-                                            <i class="fa fa-data-alt"></i>
-                                        </a>
-                                        <a href="{{ route('kelola-titik.edit', $item->id_titik) }}"
-                                            class="btn btn-info">
+                                        <a href="{{ route('kelola-titik.edit', $item->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
-                                        <form action="{{ route('kelola-titik.destroy', $item->id_titik) }}" method="POST"
-                                            class="d-inline">
-                                            @csrf
-                                            @method('delete')
-                                            <button class="btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </form>
+                                        <!-- Button trigger modal Batal Hapus -->
+                                        <button type="button" class="btn btn-danger" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Perhatian !
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Apakah anda yakin ingin menghapus <br>
+                                                        Titik Pemantauan <b>{{ $item->nama }}</b> ?
+                                                        <br><br> pilih 'Ya' apabila ingin meneruskan
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Batal</button>
+                                                        <form action="{{ route('kelola-titik.destroy', $item->id) }}"
+                                                            method="POST" class="d-inline">
+                                                            @csrf
+                                                            @method('delete')
+                                                            <button class="btn btn-danger">
+                                                                <span class="text">Ya</span>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             @empty

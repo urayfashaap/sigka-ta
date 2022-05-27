@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('status_mutu', function (Blueprint $table) {
-            $table->bigIncrements('id_mutu');
+            $table->smallIncrements('id');
             $table->string('nama_status');
             $table->string('kelas_status');
             $table->softDeletes();

@@ -18,10 +18,10 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('dashboard') }}">
+            {{-- <li class="nav-item">
+                <a class="nav-link" href="{{ route('kelola-user.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Kelola Admin</span></a>
+                    <span>Kelola Admin</span></a> --}}
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('kelola-titik.index') }}">
@@ -29,9 +29,9 @@
                     <span>Kelola Titik Pemantauan</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('dashboard') }}">
+                <a class="nav-link" href="{{ route('kelola-hasil.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Kelola Hasil Pemantauan</span></a>
+                    <span>Kelola Data Pemantauan</span></a>
             </li>
 
             <!-- Divider -->

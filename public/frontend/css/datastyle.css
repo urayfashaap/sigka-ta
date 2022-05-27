@@ -1,0 +1,70 @@
+
+:root{
+    --clr-utama:#e6be07;
+    --clr-sekunder:#e60730;
+    --clr-tersier:#079fe6;
+    --clr-gelap:#0b2a1d;
+    --clr-terang:#ece9e9;
+    --fw-judul: 400;
+    --fw-normal: 300;
+    --fw-btn-nav: 500;
+    --fw-logo: 700;
+    --hero-img: url('../images/hero.jpg')
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x:hidden;
+    top: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-gelap);
+    font-weight: 500;
+}
+a:hover{
+    color: var(--clr-tersier);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar {
+    background: linear-gradient(rgba(0,0,0,0.5),var(--clr-tersier));
+    background-image: var(--hero-img);
+    background-position: center;
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    color: var(--clr-utama);
+}
+
+.navbar-toggler{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    border-radius: 10px;
+    background: var(--clr-terang);
+}

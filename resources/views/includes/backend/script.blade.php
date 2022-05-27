@@ -14,3 +14,24 @@
     <!-- Page level custom scripts -->
     <script src="{{ url('backend/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ url('backend/js/demo/chart-pie-demo.js') }}"></script>
+
+
+    <script src="{{ url('//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js') }}"></script>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable({
+                scrollX: true,
+                fixedColumns: [{
+                    left: 2
+                }],
+                columnDefs: [{
+                    width: '10%',
+                    targets: 0
+                }]
+            });
+        });
+    </script>

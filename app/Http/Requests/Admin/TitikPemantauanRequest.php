@@ -24,12 +24,11 @@ class TitikPemantauanRequest extends FormRequest
     public function rules()
     {
         return [
-            'id_titik' => 'required|max:255',
             'nama' => 'required|max:255',
             'latitude' => 'required',
             'longitude' => 'required',
             'nama_sungai' => 'required|max:255',
-            'kecamatan' => 'required|max:255',
+            'kecamatan' => 'nullable',
         ];
     }
 }

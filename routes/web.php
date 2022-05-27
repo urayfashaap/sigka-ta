@@ -2,8 +2,14 @@
 
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\HasilPemantauanController;
 use App\Http\Controllers\Admin\TitikPemantauanController;
+use App\Http\Controllers\PetaFEController;
+use App\Http\Controllers\DataFEController;
 use App\Http\Controllers\App\BerandaController;
+use App\Http\Controllers\app\DataPemantauanController;
+use App\Http\Controllers\app\PetaPemantauanController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +26,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.app.beranda');
 });
+Route::get('/test', function () {
+    return view('pages.app.dataa');
+});
 
 route::prefix('beranda')
     ->namespace('Beranda')
@@ -27,6 +36,10 @@ route::prefix('beranda')
         Route::get('/', [BerandaController::class, 'index'])
             ->name('beranda');
     });
+Route::get('/peta', [PetaPemantauanController::class, 'index'])
+    ->name('peta');
+Route::get('/data', [DataPemantauanController::class, 'index'])
+    ->name('data');
 
 route::prefix('admin')
     ->namespace('Admin')
@@ -34,9 +47,13 @@ route::prefix('admin')
     ->group(function () {
         Route::get('/', [DashboardController::class, 'index'])
             ->name('dashboard');
-
+        Route::get('/reset', [ForgotPasswordController::class, 'index'])
+            ->name('reset password');
         Route::resource('kelola-titik', '\App\Http\Controllers\Admin\TitikPemantauanController');
+        Route::resource('kelola-hasil', '\App\Http\Controllers\Admin\HasilPemantauanController');
     });
+Route::get('titik/json', [TitikPemantauanController::class, 'titik']);
+Route::get('titik/info/{id}', [TitikPemantauanController::class, 'info']);
 Auth::routes([
     'verify' => true
 ]);

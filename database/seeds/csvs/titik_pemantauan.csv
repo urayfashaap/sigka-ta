@@ -1,0 +1,95 @@
+id,nama,latitude,longitude,nama_sungai,kecamatan
+1,Batas Kota Pontianak Barat (TPI),0.001973,109.287029,Sungai Kapuas Besar,
+2,As Sungai (Batas Kota TPI – Batulayang),0.004572,109.288272,Sungai Kapuas Besar,
+3,Batas Kota Pontianak Utara (Batulayang),0.008059,109.290377,Sungai Kapuas Besar,
+4,Pertamina,-0.003891,109.325611,Sungai Kapuas Besar,
+5,As Sungai (Pertamina-Lantamal),-0.005946,109.324746,Sungai Kapuas Besar,
+6,Lantamal,-0.006722,109.321865,Sungai Kapuas Besar,
+7,Taman Alun Kapuas,-0.022334,109.337254,Sungai Kapuas Besar,
+8,As Sungai (Taman Alun Kapuas-Pasar Puring),-0.0196277,109.3400259,Sungai Kapuas Besar,
+9,Pasar Puring,-0.018907,109.341008,Sungai Kapuas Besar,
+10,Siantan Tengah,-0.021079,109.352665,Sungai Landak,
+11,As Sungai (Siantan Tengah-Tanjung Hilir),-0.021499,109.353077,Sungai Landak,
+12,Tanjung Hilir,-0.022289,109.352946,Sungai Landak,
+13,"Tol Landak, Pontianak Timur",-0.020879,109.363139,Sungai Landak,
+14,As Sungai Tol Landak ,-0.020036,109.363087,Sungai Landak,
+15,"Tol Landak, Pontianak Utara",-0.018618,109.363091,Sungai Landak,
+16,Batas Kota Parit Malaya,-0.023681,109.380286,Sungai Landak,
+17,As Sungai Batas Kota (tanjung Hulu-Parit Malaya),-0.024401,109.379815,Sungai Landak,
+18,Tanjung Hulu,-0.025183,109.378734,Sungai Landak,
+19,Masjid Jami',-0.027859,109.347419,Sungai Kapuas Kecil,
+20,As Sungai Masjid Jami'-Pelabuhan Seng Hie,-0.027622,109.346611,Sungai Kapuas Kecil,
+21,Pelabuhan Seng-Hie,-0.0273129,109.3455143,Sungai Kapuas Kecil,
+22,PDAM,-0.041208,109.353781,Sungai Kapuas Kecil,
+23,As Sungai (PDAM-Banjar Serasan),-0.041326,109.354964,Sungai Kapuas Kecil,
+24,Banjar Serasan,-0.041059,109.355876,Sungai Kapuas Kecil,
+25,Batas Kota Parit Mayor,-0.057530,109.369405,Sungai Kapuas Kecil,
+26,As Sungai Batas Kota (Sungai raya-Parit Mayor),-0.057938,109.369182,Sungai Kapuas Kecil,
+27,Tanjung Hulu,-0.058564,109.368214,Sungai Kapuas Kecil,
+28,Hulu - Jl Purnama,-0.067641,109.318022,Parit Tokaya,Pontianak Selatan
+29,Tengah - Jl.Sutoyo,-0.048508,109.338146,Parit Tokaya,Pontianak Selatan
+30,"Tengah - Jl. Gajahmada, Ps. Flamboyan",-0.039022,109.344642,Parit Tokaya,Pontianak Selatan
+31,"Hilir - Jl.Tanjungpura, Pintu Air ",-0.037351,109.346904,Parit Bansir,Pontianak Selatan
+32,Hulu - Jl.Perdana,-0.070714,109.330189,Parit Bansir,Pontianak Selatan
+33,Tengah - Jl.Media ,-0.051211,109.347174,Parit Bansir,Pontianak Selatan
+34,Hilir - Jl.Imam Bonjol,-0.044054,109.352517,Parit Bansir,Pontianak Selatan
+35,Hulu (Sisi Kanan) - Jl. Pararel,-0.031104,109.360685,Parit Jl. Pararel,Pontianak Timur
+36,Hilir (Sisi Kanan) - Jl. Pararel,-0.033556,109.357516,Parit Jl. Pararel,Pontianak Timur
+37,Hulu (Sisi Kiri) - Jl. Pararel,0.033556,109.357516,Parit Jl. Pararel,Pontianak Timur
+38,"Hulu - Gg. Bone, Jl. Tritura",-0.024993,109.935351828,Parit Dalam Bugis,Pontianak Timur
+39,"Hilir - Gg. Bone, Jl. Tritura",-0.023995,109.351511,Parit Dalam Bugis,Pontianak Timur
+40,Hulu - Jl. Panglima Aim,-0.026166,109.368828,Parit Panglima Aim,Pontianak Timur
+41,"Hilir - Jl. Panglima Aim, Depan AKFAR YARSI",-0.035975,109.358172,Parit Panglima Aim,Pontianak Timur
+42,Hulu - Jl. Tani Jl. Purnama,-0.038994,109.367185,Parit Tani,Pontianak Timur
+43,Hilir - Jl. Tani,-0.041350,109.363363,Parit Tani,Pontianak Timur
+44,Hulu - Jl. Tanjung Raya 2,-0.059747,109.376669,Parit Mayor,Pontianak Timur
+45,"Hilir - Jl. Tanjung Raya 2, Batas Kota",-0.061782,109.373989,Parit Mayor,Pontianak Timur
+46,Hulu - Jl Danau Sentarum,-0.053759,109.305330,Parit Sungai Bangkong,Pontianak Kota
+47,Tengah - Jl Alianyang,-0.029332,109.326191,Parit Sungai Bangkong,Pontianak Kota
+48,Hilir - Jl Merdeka Barat,-0.024083,109.329448,Parit Sungai Bangkong,Pontianak Kota
+49,Hulu - Jl. Gusti Sulung Lelanang,-0.032696,109.335998,Parit Besar,Pontianak Kota
+50,Hilir - Jl. Diponegoro,-0.029045,109.340208,Parit Besar,Pontianak Kota
+51,Hulu - Jl. Karya Batas Kota,-0.093360,109.282157,Parit Sungai Jawi,Pontianak Kota
+52,Tengah - Jl. Puskesmas Pal 3,-0.025112,109.305867,Parit Sungai Jawi,Pontianak Kota
+53,Tengah - Jl Rais A Rahman,-0.019582,109.323975,Parit Sungai Jawi,Pontianak Kota
+54,Hilir - Jl. Hasanuddin,-0.017865,109.332195,Parit Sungai Jawi,Pontianak Kota
+55,Hulu - Jl. Khatulistiw Gg. Batas Kota,0.131875,109.2919306,Sungai Kunyit Baru,Pontianak Utara
+56,Tengah - Jl. Khatulistia Gg. Batas Kota ,0.121204,109.2915901,Sungai Kunyit Baru,Pontianak Utara
+57,Hilir -  Jl. Khatulistiwa Gg. Batas Kota,0.0116725,109.291449,Sungai Kunyit Baru,Pontianak Utara
+58,Hulu - Jl. Khatulistiwa Gg. Flora,0.015358,109.302772,Parit Matua Kacong,Pontianak Utara
+59,Hilir - Jl. Khatulistiwa Gg. Flora,0.007705,109.300268,Parit Matua Kacong,Pontianak Utara
+60,Hulu - Jl. Kebangkitan Nasional Dalam,0.024329,109.324625,Parit Sungai Sahang,Pontianak Utara
+61,Tengah - Jl. Kebangkitan Nasional,0.024161,109.324236,Parit Sungai Sahang,Pontianak Utara
+62,Tengah - Jl. Purnajaya,0.011704,109.325860,Parit Sungai Sahang,Pontianak Utara
+63,Hilir - Jl. Khatulistiwa PLTD Siantan,-0.002106,109.326333,Parit Sungai Sahang,Pontianak Utara
+64,Hulu  - Jl. Sungai Selamat - Jl Budi Utomo,0.025253,109.333447,Parit Sungai Selamat,Pontianak Utara
+65,Tengah -  Jl. Sungai Selamat - Jl Budi Utomo,0.007155,109.334079,Parit Sungai Selamat,Pontianak Utara
+66,Tengah - Jl. Sungai Selamat - Jl Khatulistiwa,-0.002893,109.334158,Parit Sungai Selamat,Pontianak Utara
+67,Hilir - Jl. Sungai Selamat - Jl Khatulistiwa,-0.008076,109.335290,Parit Sungai Selamat,Pontianak Utara
+68,Hulu - Jl. Dharma Putra,0.004238,109.343501,Parit Sungai Putat,Pontianak Utara
+69,Hilir - Jl. Dharma Putra,-0.012131,109.336752,Parit Sungai Putat,Pontianak Utara
+70,Hulu - Jl. Parwasal,0.002527,109.351995,Parit Wan Salim,Pontianak Utara
+71,Hilir - Jl. Parwasal,0.002527,109.351995,Parit Wan Salim,Pontianak Utara
+72,Hulu - Jl. Selat Sunda,-0.013034,109.343490,Parit Pekong,Pontianak Utara
+73,Hilir -  Jl. Selat Sunda ,-0.018416,109.347514,Parit Pekong,Pontianak Utara
+74,Hulu - Jl. Parit Pangeran,0.000987,109.357124,Parit Pangeran,Pontianak Utara
+75,Hilir - Jl. Parit Pangeran ,-0.016848,109.354573,Parit Pangeran,Pontianak Utara
+76,Hulu - Jl. Parit Nenas ,0.000406,109.366010,Parit Nenas,Pontianak Utara
+77,Hilir - Jl. Selat Panjang ,-0.015473,109.363635,Parit Nenas,Pontianak Utara
+78,Hulu - Jl.  Selat Panjang,-0.013509,109.378057,Parit Malaya,Pontianak Utara
+79,Hilir - Anak Sungai Landak,-0.018201,109.377937,Parit Malaya,Pontianak Utara
+80,Hulu - Jl. Nipah Kuning Dalam,-0.024652,109.288030,Parit Nipah Kuning,Pontianak Barat
+81,Tengah - Jl. Nipah Kuning Dalam,-0.018916,109.285846,Parit Nipah Kuning,Pontianak Barat
+82,Hilir - Jl. TPI,-0.001354,109.286609,Parit Nipah Kuning,Pontianak Barat
+83,Hulu - Jl. Karet,0.021917,109.296408,Parit Sungai Serok,Pontianak Barat
+84,Tengah - Jl. Karet,-0.013365,109.2988011,Parit Sungai Serok,Pontianak Barat
+85,Hilir - Jl. Karet,-0.08210,109.296927,Parit Sungai Serok,Pontianak Barat
+86,Hulu - Jl. Tebu,-0.016276,109.308960,Parit Tengah,Pontianak Barat
+87,Hilir - Jl. Kom Yos Sudarso,-0.006587,109.310633,Parit Tengah,Pontianak Barat
+88,Hulu - Jl. Sepakat 2,-0.067317,109.344516,Parit Bangka,Pontianak Tenggara
+89,Hilir - Jl. Sepakat 1,-0.057120,109.352599,Parit Bangka,Pontianak Tenggara
+90,Hulu - Jl. Parit Haji Husin 2,0.076727,109.349134,Parit Haji Husin,Pontianak Tenggara
+91,Hilir - Jl. Parit Haji Husin 1,-0.055478,109.362226,Parit Haji Husin,Pontianak Tenggara
+92,Hulu - Jl. Sungai Raya Dalam,-0.088396,109.349298,Parit Sungai Raya Dalam,Pontianak Tenggara
+93,Tengah - Jl. Sungai Raya Dalam,-0.069705,109.361258,Parit Sungai Raya Dalam,Pontianak Tenggara
+94,Hilir - Jl. Sungai Raya,-0.061964,109.365198,Parit Sungai Raya Dalam,Pontianak Tenggara

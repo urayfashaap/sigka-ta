@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             StatusMutu::class,
             Users::class,
+            TitikPemantauan::class,
+            HasilPemantauan::class,
+            BakuMutu::class,
         ]);
     }
 }

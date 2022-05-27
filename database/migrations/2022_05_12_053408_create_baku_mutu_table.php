@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('file_data', function (Blueprint $table) {
-            $table->text('file');
+        Schema::create('baku_mutu', function (Blueprint $table) {
+            $table->smallIncrements('id');
+            $table->string('parameter');
+            $table->double('minimum');
+            $table->double('maksimum');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('file_data');
+        Schema::dropIfExists('baku_mutu');
     }
 };
