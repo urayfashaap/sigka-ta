@@ -23,6 +23,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "datatables.net": "^1.12.1",
+        "datatables.net-dt": "^1.12.1",
         "leaflet": "^1.8.0",
         "leaflet-search": "^3.0.2",
         "vue-loader": "^17.0.0"

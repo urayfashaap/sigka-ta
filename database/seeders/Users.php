@@ -21,7 +21,7 @@ class Users extends Seeder
                     'id' => 1,
                     'name' => 'Admin DLH Pontianak',
                     'email' => 'urayfasha@gmail.com',
-                    'password' => '$2y$10$aimdiFX8dpt2KXum3KKQ2OCDZy5eELktqUtGC2DyIrD7zDNAuoKwu',
+                    'password' => '$2y$10$ttcIQrdGpEWEjHMNInSzjugej/GxHayyVxedv/vvUydRx2kK6VaiO',
                 ],
             ]
         );

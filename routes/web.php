@@ -4,6 +4,7 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HasilPemantauanController;
 use App\Http\Controllers\Admin\TitikPemantauanController;
+use App\Http\Controllers\Admin\StoretController;
 use App\Http\Controllers\PetaFEController;
 use App\Http\Controllers\DataFEController;
 use App\Http\Controllers\App\BerandaController;
@@ -41,6 +42,7 @@ Route::get('/peta', [PetaPemantauanController::class, 'index'])
 Route::get('/data', [DataPemantauanController::class, 'index'])
     ->name('data');
 
+
 route::prefix('admin')
     ->namespace('Admin')
     ->middleware(['auth', 'admin'])
@@ -49,9 +51,15 @@ route::prefix('admin')
             ->name('dashboard');
         Route::get('/reset', [ForgotPasswordController::class, 'index'])
             ->name('reset password');
+        Route::get('/storet', [StoretController::class, 'index'])
+            ->name('Kalkulator STORET');
         Route::resource('kelola-titik', '\App\Http\Controllers\Admin\TitikPemantauanController');
         Route::resource('kelola-hasil', '\App\Http\Controllers\Admin\HasilPemantauanController');
+        Route::resource('profile', '\App\Http\Controllers\Admin\ProfileController');
+        Route::post('/kelola-titik/storet', [TitikPemantauanController::class, 'storet'])
+            ->name('update-storet');
     });
+
 Route::get('titik/json', [TitikPemantauanController::class, 'titik']);
 Route::get('titik/info/{id}', [TitikPemantauanController::class, 'info']);
 Auth::routes([

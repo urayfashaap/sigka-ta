@@ -14,7 +14,6 @@ class HasilPemantauanModel extends Model
 
     protected $table = 'hasil_pemantauan';
 
-
     protected $fillable = [
         'id',
         'titik_pemantauan',

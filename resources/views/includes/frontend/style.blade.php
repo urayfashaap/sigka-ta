@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ url('frontend/css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+{{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
 <link rel="preconnect" href="{{ url('https://fonts.googleapis.com') }}">
 <link rel="preconnect" href="{{ url('https://fonts.gstatic.com') }}" crossorigin>
 <script src="{{ url('https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js') }}">

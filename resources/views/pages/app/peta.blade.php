@@ -1,21 +1,21 @@
-@extends('layouts.appdata')
+@extends('layouts.petadata')
 
-@section('content')
-    <!-- Begin Page Content -->
-    <div class="container-fluid">
+@section('content-peta')
 
-        <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Hasil Pemantauan</h1>
-
-        </div>
-        <div class="row">
-            <div class="container">
-                <div id="map" style="width: 100vw; height: 65vh; justify-content:center;">
+    <header class="masthead">
+        <div class="container px-4">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Data Hasil Pemantauan</h1>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <div id="map" style="width: 100vw; height: 65vh; justify-content:center;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        @include('includes.maps')
-    @endsection
+    </header>
+    @include('includes.maps')

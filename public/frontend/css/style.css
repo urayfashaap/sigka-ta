@@ -36,7 +36,7 @@
 }
 
 .logo{
-    width: 5rem;
+    width: 20rem;
     position: absolute;
     top: 1rem;
     left: 5rem;
@@ -93,16 +93,29 @@
     left: 0;
     background: var(--clr-terang);
     z-index: 0;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .banner-btn a:hover span{
-    width: 100%;
+    /* width: 100%;
+    z-index: 10;
+    background-color: var(--clr-terang);
+    visibility: hidden;
+    opacity: 1; */
+    background: var(--clr-gelap);
+    color: var(--clr-tersier);
+    transform: translateY(-7px);
 }
 
 .banner-btn a:hover{
-    color: var(--clr-tersier);
+    /* color: var(--clr-tersier);
     z-index: 999 !important;
+    visibility: visible;
+    opacity: 1;
+    font-weight: var(--fw-logo); */
+    background: var(--clr-terang);
+    color: var(--clr-tersier);
+    transform: translateY(-7px);
 }
 
 #sideNav{
@@ -405,6 +418,12 @@ hr{
 .storet-col{
     flex-basis: 100%;
 }
+
+.storet-row img{
+    width: 80vw;
+    height: 80vh;
+}
+
 }
 
 /* <!-- --------------------------FOOTER------------------------------------ --> */

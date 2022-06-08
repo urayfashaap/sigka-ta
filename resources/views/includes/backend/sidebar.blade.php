@@ -33,6 +33,17 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Kelola Data Pemantauan</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('Kalkulator STORET') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Kalkulator STORET</span></a>
+            </li>
+
+            {{-- <li class="nav-item">
+                <a class="nav-link" href="{{ route('profile.index') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Ganti Kata Sandi</span></a>
+            </li> --}}
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

@@ -9,6 +9,8 @@
     <link href="{{ url('backend/css/sb-admin-2.min.css') }}" rel="stylesheet">
     {{-- Data Table Styles --}}
     <link href="{{ url('//cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+    <link href="{{ url('https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.dataTables.min.css') }}"
+        rel="stylesheet">
 
 
 
@@ -18,6 +20,17 @@
             width: 50vh;
             max-width: 100%;
             max-height: 100%;
+        }
+
+        #note-storet {
+            font-size: 1rem;
+            align-items: flex-end;
+        }
+
+        #label-calc {
+            font-size: 0.8rem;
+            text-align: center;
+            white-space: nowrap;
         }
 
         /*Legend specific*/
@@ -54,12 +67,11 @@
 
         div.dataTables_wrapper {
             width: 80vw;
-            margin: auto auto;
+            margin: 0 auto;
         }
 
         th,
         td {
             white-space: nowrap;
         }
-
     </style>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>New Age - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Peta Pemantauan</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Data Pemantauan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Data Hasil Pemantauan</h1>
+
+        </div>
+
+        <div class="row">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama Titik</th>
+                                <th>Tanggal</th>
+                                <th>Waktu</th>
+                                <th>Laboratorium</th>
+                                <th>Cuaca</th>
+                                <th>Temperatur</th>
+                                <th>TDS</th>
+                                <th>TSS</th>
+                                <th>pH</th>
+                                <th>BOD</th>
+                                <th>COD</th>
+                                <th>DO</th>
+                                <th>Sulfat</th>
+                                <th>Clorida</th>
+                                <th>Nitrat</th>
+                                <th>Nitrit</th>
+                                <th>Amoniak</th>
+                                <th>Fosfat</th>
+                                <th>Sianida</th>
+                                <th>Merkuri</th>
+                                <th>Besi</th>
+                                <th>Mangan</th>
+                                <th>Seng</th>
+                                <th>Kromium Heksavalen</th>
+                                <th>Detergen</th>
+                                <th>Fenol</th>
+                                <th>Fecal Coliform</th>
+                                <th>Total Coliform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($items as $item)
+                                <tr>
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->TitikPemantauan->nama }}</td>
+                                    <td>{{ $item->tanggal_pemantauan }}</td>
+                                    <td>{{ $item->waktu_pemantauan }}</td>
+                                    <td>{{ $item->laboratorium }}</td>
+                                    <td>{{ $item->cuaca }}</td>
+                                    <td>{{ $item->temperatur }}</td>
+                                    <td>{{ $item->tds }}</td>
+                                    <td>{{ $item->tss }}</td>
+                                    <td>{{ $item->ph }}</td>
+                                    <td>{{ $item->bod }}</td>
+                                    <td>{{ $item->cod }}</td>
+                                    <td>{{ $item->do }}</td>
+                                    <td>{{ $item->sulfat }}</td>
+                                    <td>{{ $item->clorida }}</td>
+                                    <td>{{ $item->nitrat }}</td>
+                                    <td>{{ $item->nitrit }}</td>
+                                    <td>{{ $item->amoniak }}</td>
+                                    <td>{{ $item->fosfat }}</td>
+                                    <td>{{ $item->sianida }}</td>
+                                    <td>{{ $item->merkuri }}</td>
+                                    <td>{{ $item->besi }}</td>
+                                    <td>{{ $item->mangan }}</td>
+                                    <td>{{ $item->seng }}</td>
+                                    <td>{{ $item->kromium }}</td>
+                                    <td>{{ $item->detergen }}</td>
+                                    <td>{{ $item->fenol }}</td>
+                                    <td>{{ $item->fecal_coliform }}</td>
+                                    <td>{{ $item->total_coliform }}</td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="29" class="text-center">
+                                        Data Kosong
+                                    </td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            </div>
+        </header>
+
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Your Website 2022. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

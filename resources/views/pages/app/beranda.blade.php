@@ -77,18 +77,20 @@
                 <img src="{{ url('frontend/images/3.jpg') }}" alt="">
                 <div class="overlay"></div>
                 <div class="sungai-text">
-                    <h3>3 Sungai Besar di Kota Pontianak</h3>
+                    <h3>3 Sungai pembagi wilayah Kota Pontianak</h3>
                     <hr>
-                    <p>Kota Pontianak dipisahkan oleh Sungai Kapuas Besar, Sungai Kapuas Kecil, dan Sungai Landak</p>
+                    <p>Daratan Kota Pontianak dibagi menjadi 3 daratan yang dipisahkan oleh Sungai Kapuas Besar, Sungai
+                        Kapuas Kecil, dan Sungai Landak</p>
                 </div>
             </div>
             <div class="single-sungai">
                 <img src="{{ url('frontend/images/4.jpg') }}" alt="">
                 <div class="overlay"></div>
                 <div class="sungai-text">
-                    <h3>3 Sungai Besar di Kota Pontianak</h3>
+                    <h3>Pengaruh sungai di Kota Pontianak kepada daratannya</h3>
                     <hr>
-                    <p>Kota Pontianak dipisahkan oleh Sungai Kapuas Besar, Sungai Kapuas Kecil, dan Sungai Landak</p>
+                    <p>Kota Pontianak dilintasi oleh Sungai Kapuas sehingga sebesar 80% bagian Kota Pontianak merupakan
+                        kawasan rawa yang dipengaruhi oleh pasang surut sungai-sungai yang ada.</p>
                 </div>
             </div>
         </div>
@@ -133,9 +135,31 @@
                     skornya</p>
             </div>
         </div>
+        <style>
+            #gambar-storet {
+                display: inline-block;
+                justify-content: center;
+                text-align: center
+            }
+
+            .storet-row img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .storet-row span {
+                display: block;
+                font-size: 1rem;
+            }
+
+        </style>
         <div class="storet-row">
-            <img src="{{ url('frontend/images/tabelstoret.jpg') }}">
-            <img src="{{ url('frontend/images/tabelstoret.jpg') }}">
+            <div class="storet-col" id="gambar-storet"><img src="{{ url('frontend/images/tabelstoret.png') }}">
+                <span>Pembagian skor metode STORET berdasarkan parameter</span>
+            </div>
+            <div class="storet-col" id="gambar-storet"><img src="{{ url('frontend/images/tabelnilai.png') }}">
+                <span>Klasifikasi kelas status mutu berdasarkan total skor</span>
+            </div>
         </div>
     </section>
 @endsection

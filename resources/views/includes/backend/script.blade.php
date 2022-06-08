@@ -17,19 +17,18 @@
 
 
     <script src="{{ url('//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js') }}"></script>
-
-
-
-
+    <script src="{{ url('https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js') }}"></script>
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable({
                 scrollX: true,
-                fixedColumns: [{
-                    left: 2
-                }],
+                scrollCollapse: true,
+                fixedColumns: {
+                    left: 2,
+                    right: 1
+                },
                 columnDefs: [{
-                    width: '10%',
+                    width: '2%',
                     targets: 0
                 }]
             });

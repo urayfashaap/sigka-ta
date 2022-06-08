@@ -19,8 +19,8 @@ class TitikPemantauan extends CsvSeeder
         $this->table = 'titik_pemantauan';
         $this->filename = base_path() . '/database/seeds/csvs/titik_pemantauan.csv';
     }
-    public function run()
-    {
-        parent::run();
-    }
+    // public function run()
+    // {
+    //     parent::run();
+    // }
 }

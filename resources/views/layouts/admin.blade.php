@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" type="image/png" href="{{ url('/backend/img/logo.png') }}">
 
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Dashboard SIGKA</title>
 
     @include('includes.backend.style')
     @yield('includes.backend.styles')

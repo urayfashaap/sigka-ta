@@ -1,11 +1,19 @@
         {{-- leaflet js dan jquery --}}
         <script src="{{ url('leaflet/package/dist/leaflet.js') }}"></script>
         <script src="{{ url('https://code.jquery.com/jquery-3.6.0.min.js') }}"></script>
-        {{-- Geocoder Plugins --}}
-        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+        <link href="{{ url('backend/css/leaflet/leaflet-search.css') }}" rel="stylesheet">
+        <link href="{{ url('backend/css/leaflet/leaflet-search.mobile.css') }}" rel="stylesheet">
+        <!-- Load the `mapbox-gl-geocoder` plugin. -->
+        <script
+                src="{{ url('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js') }}">
+        </script>
         <link rel="stylesheet"
-            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+            href="{{ url('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css') }}"
             type="text/css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
         <script>
             // Penentuan koordinat dan zoom level
 
@@ -23,6 +31,11 @@
                 })
             osm.addTo(map);
 
+            // var geocoder = L.Control.geocoder({
+            //     defaultMarkgeocode: false
+            // })
+
+
 
 
 
@@ -31,36 +44,36 @@
                 iconUrl: '{{ url('assets/icons/icon_a.png') }}',
 
                 iconSize: [25, 25], // size of the icon
-                iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+                iconAnchor: [5, 10], // point of the icon which will correspond to marker's location
+                popupAnchor: [8, -10] // point from which the popup should open relative to the iconAnchor
             });
             var icon_b = L.icon({
                 iconUrl: '{{ url('assets/icons/icon_b.png') }}',
 
                 iconSize: [25, 25], // size of the icon
-                iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+                iconAnchor: [5, 10], // point of the icon which will correspond to marker's location
+                popupAnchor: [8, -10] // point from which the popup should open relative to the iconAnchor
             });
             var icon_c = L.icon({
                 iconUrl: '{{ url('assets/icons/icon_c.png') }}',
 
                 iconSize: [25, 25], // size of the icon
-                iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+                iconAnchor: [5, 10], // point of the icon which will correspond to marker's location
+                popupAnchor: [8, -10] // point from which the popup should open relative to the iconAnchor
             });
             var icon_d = L.icon({
                 iconUrl: '{{ url('assets/icons/icon_d.png') }}',
 
                 iconSize: [25, 25], // size of the icon
-                iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+                iconAnchor: [5, 10], // point of the icon which will correspond to marker's location
+                popupAnchor: [8, -10] // point from which the popup should open relative to the iconAnchor
             });
             var icon_null = L.icon({
                 iconUrl: '{{ url('assets/icons/icon_null.png') }}',
 
                 iconSize: [25, 25], // size of the icon
-                iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
-                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+                iconAnchor: [5, 10], // point of the icon which will correspond to marker's location
+                popupAnchor: [8, -10] // point from which the popup should open relative to the iconAnchor
             });
 
             // Pemanggilan titik yang telah tersimpan di database ke dalam peta (parseFloat untuk mengconvert coordinate menjadi float)
@@ -70,7 +83,6 @@
                     $.each(data, function(index) {
                         var longitude = parseFloat(data[index].longitude);
                         var latitude = parseFloat(data[index].latitude);
-                        var mutu = (data[index].mutu_air);
                         var searchLayer = L.geoJson().addTo(map);
                         var detIcon;
 
@@ -91,16 +103,15 @@
                             title: (data[index].nama)
                         })
                         marker.addTo(map);
-
                         marker.on('click', (e) => {
-                            // alert("ini titik");
                             $.getJSON('titik/info/' + data[index].id, function(data) {
 
                                 $.each(data, function(index) {
-                                    // alert(data[index].id);
+                                    var mutu = (data[index].mutu_air);
+                                    var kelas = (data[index].kelas_status);
 
                                     var html =
-                                        '<table class="table table-hover table-sm" width="50%">' +
+                                        '<table class="table table-hover table-sm table-condensed compact" style="word-wrap:break-all;font-size:0.8rem">' +
                                         '<tr class="table-success"><th scope = "row">Nama Titik</th><td>' +
                                         data[index].nama + '</td></tr>';
                                     html +=
@@ -121,17 +132,18 @@
                                         '    </td>   </tr>';
                                     html +=
                                         '<tr class="table-primary"><th scope = "row">Mutu Air</th><td>' +
-                                        data[index].mutu_air +
+                                        'Kelas ' + data[index]
+                                        .kelas_status +
+                                        ' - ' +
+                                        data[index].nama_status +
                                         '</td></tr></table>';
 
-                                    marker.bindPopup(html).openPopup();
+                                    marker.bindPopup(html, {}).openPopup();
                                 });
                             });
                         })
-
                     })
                 })
-                L.Control.geocoder().addTo(map);
             })
 
             var legend = L.control({
@@ -149,14 +161,9 @@
                     '<img src="{{ url('assets/icons/icon_c.png') }}"><span>Kelas C - Tercemar Sedang</span><br>';
                 div.innerHTML +=
                     '<img src="{{ url('assets/icons/icon_d.png') }}"><span>Kelas D - Tercemar Berat</span><br>';
-
+                div.innerHTML +=
+                    '<img src="{{ url('assets/icons/icon_null.png') }}"><span>Data belum cukup untuk dihitung</span><br>';
                 return div;
-                L.map('map', {
-                    searchControl: {
-                        layer: searchLayer
-                    }
-                });
             };
-
             legend.addTo(map);
         </script>

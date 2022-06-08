@@ -53,11 +53,6 @@
                     <button class="btn btn-danger btn-block" type="button" name="cancel" value="cancel"
                         onclick="history.go(-1)">Batal</button>
 
-
-                    <!-- Button trigger modal -->
-                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Launch Demo Modal</button>
-
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
