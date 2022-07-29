@@ -27,7 +27,6 @@ return new class extends Migration
             $table->unsignedsmallInteger('mutu_air')
                 ->nullable();
             $table->foreign('mutu_air')->references('id')->on('status_mutu');
-            $table->softDeletes();
             $table->timestamps();
         });
     }

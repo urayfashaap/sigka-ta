@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #2937f0;
+  --bs-primary: #079fe6;
   --bs-secondary: #9f1ae2;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -111,6 +111,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  color: var(--bs-primary);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -129,19 +130,23 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  color: var(--bs-primary);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
+    color: var(--bs-primary);
   }
 }
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  color: var(--bs-primary);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
+    color: var(--bs-primary);
   }
 }
 

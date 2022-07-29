@@ -44,7 +44,6 @@ return new class extends Migration
             $table->double('fenol')->nullable();
             $table->double('fecal_coliform')->nullable();
             $table->double('total_coliform')->nullable();
-            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -25,8 +25,8 @@
                     @csrf
                     <div class="form-group">
                         <label for="nama">Nama Titik</label>
-                        <input type="text" class="form-control" name="nama" placeholder="Masukkan nama titik pemantauan"
-                            value="{{ old('nama') }}">
+                        <input type="text" class="form-control" name="nama"
+                            placeholder="Masukkan nama titik pemantauan" value="{{ old('nama') }}">
                     </div>
                     <div class="form-group">
                         <label for="latitude">Latitude</label>

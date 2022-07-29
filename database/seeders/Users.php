@@ -20,7 +20,7 @@ class Users extends Seeder
                 [
                     'id' => 1,
                     'name' => 'Admin DLH Pontianak',
-                    'email' => 'urayfasha@gmail.com',
+                    'email' => 'dlh@gmail.com',
                     'password' => '$2y$10$ttcIQrdGpEWEjHMNInSzjugej/GxHayyVxedv/vvUydRx2kK6VaiO',
                 ],
             ]

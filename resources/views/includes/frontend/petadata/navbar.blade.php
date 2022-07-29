@@ -11,11 +11,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                 <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('beranda') }}">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('data') }}">Data
+                        Pemantauan</a>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('peta') }}">Peta
                         Pemantauan</a>
                 </li>
-                <li class="nav-item"><a class="nav-link me-lg-3" href="{{ route('data') }}">Data
-                        Pemantauan</a>
                 </li>
             </ul>
         </div>

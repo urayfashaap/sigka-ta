@@ -5,14 +5,12 @@ namespace App\Models;
 use Database\Seeders\HasilPemantauan;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 
 
 class TitikPemantauanModel extends Model
 {
     use HasFactory;
-    use SoftDeletes;
 
     protected $table = 'titik_pemantauan';
 
@@ -23,6 +21,7 @@ class TitikPemantauanModel extends Model
         'latitude',
         'longitude',
         'nama_sungai',
+        'kecamatan',
         'mutu_air',
     ];
 
